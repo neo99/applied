@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Applied California State Jobs",
+  "version": "1.0",
+
+  "description": "Mark jobs as applied so you don't have to waste time just to find out you have applied the job at jobs.ca.gov",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://jobs.ca.gov/*"],
+      "js": ["applied.js"]
+    }
+  ]
+
+}
